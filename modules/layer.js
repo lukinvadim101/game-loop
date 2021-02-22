@@ -10,8 +10,8 @@ export class Layer {
         addEventListener (`resize`, () => this.fitToContainer(this.canvas));
     }
     // подгоняет канвас под размер контэйнера
-    fitToContainer(cnv) {
-        this.w = this.canvas.width  = this.canvasoffsetWidth;
-        this.h = this.canvas.height = this.canvasoffsetHeight;
+    fitToContainer() {
+        this.w = this.canvas.width  = this.canvas.offsetWidth;
+        this.h = this.canvas.height = this.canvas.offsetHeight;
     }
 }
